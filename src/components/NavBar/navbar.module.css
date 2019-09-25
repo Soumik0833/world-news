@@ -1,0 +1,30 @@
+.mainNavBar {
+    background-color: rgb(64, 64, 64);
+    max-height: 3em;
+}
+
+.navbarToggler {
+    background-color: #ff652f;
+}
+
+.navbarText {
+    color: #ff652f !important;
+
+}
+
+.navbarBrand {
+    color: white !important;
+    font-size: large;
+    font-style: italic;
+}
+
+.navlink {
+    background-color: black;
+    border-radius: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navlink:hover {
+    background-color: grey;
+}

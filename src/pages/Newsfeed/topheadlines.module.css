@@ -1,0 +1,177 @@
+.background{
+    height: auto;
+    background: rgba(29, 29, 29, 0.95);
+}
+
+@media (min-width: 1200px) {
+    .mainCard {
+        margin: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: rgb(52, 52, 52);
+    }
+
+    .actualImage {
+        object-fit: cover;
+    }
+
+    .titleBadge {
+        display: none;
+    }
+
+    .imageCard {
+        position: relative;
+        box-shadow: none;
+    }
+
+    .textCard {
+        font-size: 1em;
+        background: rgba(39, 39, 39, 0.89);
+        color: white;
+        text-align: justify;
+        padding-bottom: -1em;
+    }
+
+    .titleHeader {
+        text-align: left;
+        font-size: large;
+        background: rgba(255, 0, 0, 0.80);
+    }
+
+    .descriptionText {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .dateBadge {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        background: #000000;
+        text-align: center;
+        border-radius: 2px;
+        color: white;
+        padding: 5px 5px;
+        font-size: 1vw;
+    }
+
+    .viewSourceButtonDiv {
+        text-align: center;
+    }
+
+    .viewSourceButton {
+        background-color: #ff652f;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .mainCard {
+        margin: 2%;
+        max-height: 1080px;
+        max-width: 1080px;
+    }
+
+    .imageCard {
+        position: relative;
+        max-height: 720px;
+        max-width: inherit;
+    }
+
+    .dateBadge {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        background: black;
+        text-align: center;
+        border-radius: 2px;
+        color: white;
+        padding: 5px 5px;
+        font-size: 1.5vw;
+    }
+
+    .titleBadge {
+        position: absolute;
+        bottom: 3%;
+        background: rgba(255, 0, 0, 0.80);
+        text-align: center;
+        border-radius: 2px;
+        color: white;
+        padding: 5px 5px;
+        font-size: 2.5vw;
+    }
+
+    .actualImage {
+        max-width: inherit;
+        max-height: inherit;
+    }
+
+    .titleHeader {
+        display: none;
+    }
+
+    .textCard {
+        font-size: 1em;
+        background: rgba(39, 39, 39, 0.89);
+        color: white;
+        text-align: center;
+    }
+
+    .viewSourceButton {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .mainCard {
+        margin: 2%;
+        display: flex;
+    }
+
+    .imageCard {
+        position: relative;
+    }
+
+    .titleBadge {
+        display: none;
+    }
+
+    .titleHeader {
+        text-align: center;
+        font-size: 1.1em;
+        background: rgba(255, 0, 0, 0.95);
+        border-radius: 2%;
+    }
+
+    .textCard {
+        font-size: 1em;
+        background: rgba(39, 39, 39, 0.89);
+        color: white;
+    }
+
+    .dateBadge {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        background: black;
+        text-align: center;
+        border-radius: 2px;
+        color: white;
+        padding: 5px 5px;
+        font-size: 2.5vw;
+    }
+
+    .viewSourceButtonDiv {
+        margin: 0.5em;
+        text-align: center;
+    }
+
+    .viewSourceButton {
+        background-color: #ff652f;
+    }
+
+}
+
+
+
+
