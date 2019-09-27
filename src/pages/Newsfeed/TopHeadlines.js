@@ -5,11 +5,13 @@ import BackendHandler from "../../BackendHandler";
 import styles from './topheadlines.module.css';
 import NavBar from "../../components/NavBar/NavBar";
 
+
 class TopHeadlines extends React.Component {
 
     constructor(props) {
         super(props);
-        BackendHandler.fetch(BackendHandler.TOP_HEADLINES, "country=us");
+        BackendHandler.fetch(BackendHandler.TOP_HEADLINES, "country=" + props.match.params.id);
+        console.log(props.match.params.id);
     }
 
     setDate(date) {
@@ -22,6 +24,7 @@ class TopHeadlines extends React.Component {
             minute: "2-digit",
         });
     };
+
 
     render() {
         return (
@@ -66,6 +69,7 @@ class TopHeadlines extends React.Component {
 function mapStateToProps(state) {
     return {
         articles: state.backend.articles,
+        countryCode: state.topHeadlineCountryChanger.changeCountry,
     }
 }
 

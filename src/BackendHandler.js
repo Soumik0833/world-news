@@ -7,8 +7,6 @@ import {
 } from "./redux/actions/fetchFromBackendActions";
 require('dotenv').config();
 
-console.log(process.env);
-
 
 class BackendHandler {
     static fetch(path, query, data = null, init = {}) {

@@ -7,9 +7,12 @@
     background-color: #ff652f;
 }
 
+.navbarDropdownText {
+    color: #ff652f !important;
+}
+
 .navbarText {
     color: #ff652f !important;
-
 }
 
 .navbarBrand {
@@ -20,11 +23,16 @@
 
 .navlink {
     background-color: black;
-    border-radius: 5%;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .navlink:hover {
     background-color: grey;
+}
+
+.navbarDropdownMenu {
+    background-color: black;
+    overflow-y: scroll;
+    max-height: 50vh;
 }
