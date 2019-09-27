@@ -8,11 +8,18 @@
 }
 
 .navbarDropdownText {
-    color: #ff652f !important;
+    color: white !important;
+    background-color: rgba(137, 22, 20, 0.89);
+    border-bottom: 1px solid white;
+}
+
+.navbarDropdownText:hover {
+    color: white !important;
+    background-color: gray;
 }
 
 .navbarText {
-    color: #ff652f !important;
+    color: white !important;
 }
 
 .navbarBrand {
@@ -21,18 +28,68 @@
     font-style: italic;
 }
 
-.navlink {
-    background-color: black;
+.navbarButtons {
+    background-color: #871614;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer !important;
+    min-width: 115px;
+    text-align: center;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.navbarButtons:hover {
+    background-color: gray;
+    transition: 0.2s;
+    transform: scale(1.1);
+    cursor: pointer !important;
+}
+
+.navbarDropdownSelector {
+    background-color: #871614;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.navlink:hover {
-    background-color: grey;
+.navbarDropdownSelector:hover {
+    background-color: gray;
 }
 
+
 .navbarDropdownMenu {
-    background-color: black;
+    background-color: #871614;
     overflow-y: scroll;
-    max-height: 50vh;
+    max-height: 30vh;
+    max-width: inherit;
+    width: inherit;
+}
+
+@media (max-width: 1234px) {
+    .navbarButtons {
+        max-width: 15rem;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: -0;
+        border-radius: 2%;
+    }
+
+    .navbarDropdownSelector {
+        max-width: 15rem;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: -0;
+        border-radius: 2%;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbarDropdownMenu {
+        background: #db271e;
+    }
+
+    .navbarDropdownText {
+        background: rgba(219, 39, 30, 0.7);
+        text-align: center;
+    }
+
 }

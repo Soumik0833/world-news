@@ -63,6 +63,11 @@
         background-color: #ff652f;
     }
 
+    .viewSourceButton:hover {
+        transition: 0.1s;
+        transform: scale(1.1);
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {

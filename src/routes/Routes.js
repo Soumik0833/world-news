@@ -8,7 +8,7 @@ const Routes = () => (
     <Router>
         <Switch>
             <Route
-                path="/everything/:id"
+                path="/top-headlines/:id"
                 exact
                 component={TopHeadlines}
             />

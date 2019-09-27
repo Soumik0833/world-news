@@ -10,8 +10,7 @@ class TopHeadlines extends React.Component {
 
     constructor(props) {
         super(props);
-        BackendHandler.fetch(BackendHandler.TOP_HEADLINES, "country=" + props.match.params.id);
-        console.log(props.match.params.id);
+        BackendHandler.fetch(BackendHandler.TOP_HEADLINES,  props.match.params.id);
     }
 
     setDate(date) {
