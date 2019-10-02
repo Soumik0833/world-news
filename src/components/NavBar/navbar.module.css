@@ -5,6 +5,7 @@
 
 .navbarToggler {
     background-color: #ff652f;
+    padding: 0 0.25rem 0 0.25rem;
 }
 
 .navbarDropdownText {
@@ -28,35 +29,6 @@
     font-style: italic;
 }
 
-.navbarButtons {
-    background-color: #871614;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer !important;
-    min-width: 115px;
-    text-align: center;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-}
-
-.navbarButtons:hover {
-    background-color: gray;
-    transition: 0.2s;
-    transform: scale(1.1);
-    cursor: pointer !important;
-}
-
-.navbarDropdownSelector {
-    background-color: #871614;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.navbarDropdownSelector:hover {
-    background-color: gray;
-}
-
-
 .navbarDropdownMenu {
     background-color: #871614;
     overflow-y: scroll;
@@ -65,31 +37,81 @@
     width: inherit;
 }
 
-@media (max-width: 1234px) {
+@media screen and (min-width: 1235px) {
     .navbarButtons {
-        max-width: 15rem;
-        padding-left: 2%;
-        padding-right: 2%;
-        margin-left: -0;
-        border-radius: 2%;
+        background-color: #871614;
+        margin-left: 0.75vw;
+        margin-right: 0.75vw;
+        cursor: pointer !important;
+        min-width: 8vw;
+        text-align: center;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+
+    .navbarButtons:hover {
+        background-color: gray;
+        transition: 0.2s;
+        transform: scale(1.1);
+        cursor: pointer !important;
     }
 
     .navbarDropdownSelector {
-        max-width: 15rem;
+        background-color: #871614;
+        margin-left: 0.75vw;
+        margin-right: 0.75vw;
+    }
+
+    .navbarDropdownSelector:hover {
+        background-color: gray;
+    }
+}
+
+@media (max-width: 1234.98px) {
+    .navbarButtons {
+        max-width: 20vw;
+        min-width: 220px;
         padding-left: 2%;
         padding-right: 2%;
         margin-left: -0;
-        border-radius: 2%;
-        padding-bottom: 0.5rem;
+        background-color: #871614;
+        text-align: center;
+    }
+
+    .navbarButtons:hover {
+        background-color: gray;
+        transition: 0.2s;
+        transform: scale(1.1);
+        cursor: pointer !important;
+    }
+
+    .navbarDropdownSelector {
+        min-width: 220px;
+        max-width: 20vw;
+        margin-left: -0;
+        background-color: #871614;
+        text-align: center;
+    }
+
+    .navbarDropdownSelector:hover {
+        background-color: grey;
     }
 
     .navbarDropdownMenu {
-        background: #db271e;
+        background: #951b18;
+        min-width: 100%;
+        overflow-x: hidden;
+        margin-top: -5px;
     }
 
     .navbarDropdownText {
-        background: rgba(219, 39, 30, 0.7);
+        background: #951b18;
         text-align: center;
+    }
+
+    .navbarDropdownText:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
     }
 
 }

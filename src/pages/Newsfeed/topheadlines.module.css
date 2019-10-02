@@ -3,12 +3,11 @@
     background: rgba(29, 29, 29, 0.95);
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .mainCard {
         margin: 2%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background: rgb(52, 52, 52);
     }
 
     .actualImage {
@@ -57,6 +56,7 @@
 
     .viewSourceButtonDiv {
         text-align: center;
+        margin-bottom: -2%;
     }
 
     .viewSourceButton {
@@ -70,7 +70,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .mainCard {
         margin: 2%;
         max-height: 1080px;
@@ -127,7 +127,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 220px) and (max-width: 767px) {
     .mainCard {
         margin: 2%;
         display: flex;

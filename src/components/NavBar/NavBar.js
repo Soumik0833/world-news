@@ -59,7 +59,7 @@ class NavBar extends Component {
                             </NavItem>
 
                             <NavItem className={styles.navbarButtons}>
-                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("ccience")}>Science</NavLink>
+                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("science")}>Science</NavLink>
                             </NavItem>
 
                             <NavItem className={styles.navbarButtons}>
