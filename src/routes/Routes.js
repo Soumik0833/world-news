@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import TopHeadlines from "../pages/Newsfeed/TopHeadlines";
 import NavBar from "../components/NavBar/NavBar"
+import HomePage from "../pages/Homepage/HomePage";
 
 
 const Routes = () => (
@@ -16,7 +17,7 @@ const Routes = () => (
             <Route
                 path="/"
                 exact
-                component={NavBar}
+                component={HomePage}
             />
 
         </Switch>

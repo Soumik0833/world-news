@@ -67,7 +67,12 @@
     }
 }
 
-@media (max-width: 1234.98px) {
+@media (min-width: 220px) and (max-width: 1234.98px) {
+    .mainNavBar {
+        position: sticky;
+        max-height: 3em;
+    }
+
     .navbarButtons {
         max-width: 20vw;
         min-width: 220px;

@@ -11,6 +11,14 @@ class HomePage extends React.Component {
         super(props);
         BackendHandler.fetch(BackendHandler.TOP_HEADLINES, props.match.params.id);
     }
+
+    render() {
+        return (
+            <div>
+                <NavBar/>
+            </div>
+        );
+    }
 }
 
 function mapStateToProps(state) {
@@ -20,4 +28,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(TopHeadlines);
+export default connect(mapStateToProps)(HomePage);
