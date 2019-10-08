@@ -68,7 +68,6 @@ class TopHeadlines extends React.Component {
 function mapStateToProps(state) {
     return {
         articles: state.backend.articles,
-        countryCode: state.topHeadlineCountryChanger.changeCountry,
     }
 }
 
