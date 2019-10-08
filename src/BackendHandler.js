@@ -49,7 +49,7 @@ class BackendHandler {
 
 }
 
-BackendHandler.EVERYTHING = "https://newsapi.org/v2/everything?";
+BackendHandler.EVERYTHING = "https://newsapi.org/v2/everything";
 BackendHandler.TOP_HEADLINES = "https://newsapi.org/v2/top-headlines";
 
 export default BackendHandler;

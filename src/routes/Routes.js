@@ -1,8 +1,8 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import TopHeadlines from "../pages/Newsfeed/TopHeadlines";
-import NavBar from "../components/NavBar/NavBar"
 import HomePage from "../pages/Homepage/HomePage";
+import EverythingTopicPage from "../pages/Newsfeed/EverythingTopicPage";
 
 
 const Routes = () => (
@@ -18,6 +18,12 @@ const Routes = () => (
                 path="/"
                 exact
                 component={HomePage}
+            />
+
+            <Route
+                path="/topics/:id"
+                exact
+                component={EverythingTopicPage}
             />
 
         </Switch>

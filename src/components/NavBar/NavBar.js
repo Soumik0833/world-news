@@ -17,9 +17,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGlobe} from "@fortawesome/free-solid-svg-icons";
 import {navbarToggled} from "../../redux/actions/navbarToggleActions";
 import {connect} from "react-redux";
-import {topHeadlinesChangeCountry } from "../../redux/actions/topHeadlinesActions";
-import {Link} from "react-router-dom";
-
 
 function redirectCountry (link) {
     return window.location.assign("/top-headlines/country=" + link)
@@ -29,16 +26,13 @@ function redirectCategory (link) {
     return window.location.assign("/top-headlines/country=us&category=" + link)
 }
 
-class NavBar extends Component {
-    constructor(props) {
-        super(props);
-    }
 
+class NavBar extends Component {
     render() {
         return (
-                <Navbar className={styles.mainNavBar} light expand="md" sticky="top">
+                <Navbar className={styles.mainNavBar} dark expand="md" sticky="top">
                     <NavbarToggler className={styles.navbarToggler} onClick={this.props.navbarToggle}/>
-                    <NavbarBrand className={styles.navbarBrand}> <FontAwesomeIcon icon={faGlobe} />World News</NavbarBrand>
+                    <NavbarBrand className={styles.navbarBrand} href="/"> <FontAwesomeIcon icon={faGlobe}/>World News</NavbarBrand>
                     <Collapse isOpen={this.props.navbarIsOpen} navbar>
                         <Nav className="ml-auto" navbar>
 
@@ -304,13 +298,11 @@ class NavBar extends Component {
 
 const mapStateToProps = state => ({
     navbarIsOpen: state.navbarToggle.navbarIsOpen,
-    topHeadlineCountry: state.topHeadlineCountryChanger.changeCountry,
 });
 
 //Update state in Redux
 const mapDispatchToProps = dispatch => ({
     navbarToggle: () => dispatch(navbarToggled()),
-    changeCountry: (event) => dispatch(topHeadlinesChangeCountry(event.target.value))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

@@ -1,0 +1,90 @@
+#root, body, html {
+    background: rgba(29, 29, 29, 0.95);
+}
+
+@media (min-width: 1415px) {
+    .background {
+        height: auto;
+        background: rgba(29, 29, 29, 0.95);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1414.98px) {
+    .background {
+        height: 100%;
+        background: rgba(29, 29, 29, 0.95);
+    }
+}
+
+.carouselCaptionContainer {
+    color: white;
+    background: rgba(0, 0, 0, 0.79);
+    border-radius: 2px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+
+@media (min-width: 1023.98px) {
+
+    .carousel {
+        text-align: center;
+    }
+
+
+    .topHeadlineImage {
+        height: 40vw;
+        width: 75vw;
+    }
+
+    .carouselCaptionContainer {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .carouselCaption {
+        font-size: 1.25vw;
+    }
+
+    .separator {
+        margin: 3.5rem 0 0 3vw;
+        color: white;
+        font-size: 2vw;
+    }
+
+    .topicsMainDiv {
+        width: 90vw;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .topics {
+        margin: 0 3vw 0 3vw;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .topicContainer {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 50%;
+    }
+
+    .topicContainer:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+
+
+    .eachTopicItemContainer {
+        margin-left: 3rem;
+        margin-right: -3.5rem;
+    }
+
+    .topicImage {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+}

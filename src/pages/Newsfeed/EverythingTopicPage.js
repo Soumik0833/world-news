@@ -6,11 +6,11 @@ import styles from './topheadlines.module.css';
 import NavBar from "../../components/NavBar/NavBar";
 
 
-class TopHeadlines extends React.Component {
+class EverythingTopicPage extends React.Component {
 
     constructor(props) {
         super(props);
-        BackendHandler.fetch(BackendHandler.TOP_HEADLINES,  props.match.params.id);
+        BackendHandler.fetch(BackendHandler.EVERYTHING,  props.match.params.id);
     }
 
     setDate(date) {
@@ -68,8 +68,7 @@ class TopHeadlines extends React.Component {
 function mapStateToProps(state) {
     return {
         articles: state.backend.articles,
-        countryCode: state.topHeadlineCountryChanger.changeCountry,
     }
 }
 
-export default connect(mapStateToProps)(TopHeadlines);
+export default connect(mapStateToProps)(EverythingTopicPage);

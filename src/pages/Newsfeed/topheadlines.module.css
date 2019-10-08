@@ -60,7 +60,8 @@
     }
 
     .viewSourceButton {
-        background-color: #ff652f;
+        background-color: transparent;
+        border: 2px solid white;
     }
 
     .viewSourceButton:hover {
@@ -172,7 +173,8 @@
     }
 
     .viewSourceButton {
-        background-color: #ff652f;
+        background-color: transparent;
+        border: 2px solid white;
     }
 
 }
