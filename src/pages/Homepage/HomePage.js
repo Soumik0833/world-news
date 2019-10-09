@@ -230,6 +230,16 @@ class HomePage extends React.Component {
                             ) : <></>}
                         </MultiCarousel>
                     </div>
+
+                <div className={styles.topicCard}>
+                    {listOfTopics.topics.map(topic =>
+                        <Link to={topic.url}>
+                    <Card className={styles.eachTopicCard}>
+                        <CardImg src={topic.logo} className={styles.eachTopicCardImg}/>
+                    </Card>
+                        </Link>
+                    )}
+                </div>
             </div>
         );
     }
