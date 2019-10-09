@@ -117,7 +117,9 @@ class HomePage extends React.Component {
             <div className={styles.background}>
                 <NavBar/>
 
-                    <MultiCarousel
+                <h2 className={styles.topHeadlineText}>Top Headlines</h2>
+
+                <MultiCarousel
                         additionalTransfrom={0}
                         arrows
                         autoPlaySpeed={1000}
@@ -164,7 +166,7 @@ class HomePage extends React.Component {
                                 <img
                                     className={styles.topHeadlineImage}
                                     src={article.urlToImage ? article.urlToImage : "https://picsum.photos/1080/720"}
-                                    alt="First slide"
+                                    alt=""
                                 />
                                 <BootstrapCarousel.Caption className={styles.carouselCaptionContainer}>
                                     <h3 className={styles.carouselCaption}>{article.title}</h3>

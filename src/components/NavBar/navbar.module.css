@@ -1,7 +1,3 @@
-.mainNavBar {
-    background-color: rgb(64, 64, 64);
-    max-height: 3em;
-}
 
 .navbarToggler {
     background-color: black;
@@ -10,7 +6,7 @@
 
 .navbarDropdownText {
     color: white !important;
-    background-color: rgba(137, 22, 20, 0.89);
+    background: rgba(255, 0, 0, 0.80);
     border-bottom: 1px solid white;
 }
 
@@ -30,7 +26,7 @@
 }
 
 .navbarDropdownMenu {
-    background-color: #871614;
+    background: rgba(255, 0, 0, 0.80);
     overflow-y: scroll;
     max-height: 30vh;
     max-width: inherit;
@@ -38,10 +34,14 @@
 }
 
 @media screen and (min-width: 1235px) {
+    .mainNavBar {
+        background-color: rgb(64, 64, 64);
+        padding: 15px 0.75em 15px 0.75em;
+    }
+
     .navbarButtons {
-        background-color: #871614;
-        margin-left: 0.75vw;
-        margin-right: 0.75vw;
+        background: rgba(255, 0, 0, 0.80);
+        margin: 0 1vw 0 1vw;
         cursor: pointer !important;
         min-width: 8vw;
         text-align: center;
@@ -57,7 +57,7 @@
     }
 
     .navbarDropdownSelector {
-        background-color: #871614;
+        background: rgba(255, 0, 0, 0.80);
         margin-left: 0.75vw;
         margin-right: 0.75vw;
     }
@@ -70,7 +70,8 @@
 @media (min-width: 220px) and (max-width: 1234.98px) {
     .mainNavBar {
         position: sticky;
-        max-height: 3em;
+        background-color: rgb(64, 64, 64);
+        height: 3.5em;
     }
 
     .navbarButtons {
@@ -79,7 +80,7 @@
         padding-left: 2%;
         padding-right: 2%;
         margin-left: -0;
-        background-color: #871614;
+        background: rgb(255, 0, 0);
         text-align: center;
     }
 
@@ -94,7 +95,7 @@
         min-width: 220px;
         max-width: 20vw;
         margin-left: -0;
-        background-color: #871614;
+        background: rgb(255, 0, 0);
         text-align: center;
     }
 
@@ -103,14 +104,14 @@
     }
 
     .navbarDropdownMenu {
-        background: #951b18;
+        background: rgb(255, 0, 0);
         min-width: 100%;
         overflow-x: hidden;
         margin-top: -5px;
     }
 
     .navbarDropdownText {
-        background: #951b18;
+        background: rgb(255, 0, 0);
         text-align: center;
     }
 

@@ -29,8 +29,14 @@
 
     .carousel {
         text-align: center;
+        margin-top: 2vh;
     }
 
+    .topHeadlineText {
+        margin: 0.5em 0 0 3vw;
+        color: white;
+        font-size: 2vw;
+    }
 
     .topHeadlineImage {
         height: 40vw;
@@ -47,7 +53,7 @@
     }
 
     .separator {
-        margin: 3.5rem 0 0 3vw;
+        margin: 0.75em 0 0 3vw;
         color: white;
         font-size: 2vw;
     }
@@ -75,7 +81,6 @@
         transition: 0.4s;
     }
 
-
     .eachTopicItemContainer {
         margin-left: 3rem;
         margin-right: -3.5rem;
@@ -96,8 +101,14 @@
 
     .carousel {
         text-align: center;
+        margin-top: 1vh;
     }
 
+    .topHeadlineText {
+        margin: 0.5em 0 0 3vw;
+        color: white;
+        font-size: 2vw;
+    }
 
     .topHeadlineImage {
         height: 40vw;
@@ -114,7 +125,7 @@
     }
 
     .separator {
-        margin: 3.5rem 0 0 3vw;
+        margin: 2em 0 0 3vw;
         color: white;
         font-size: 2vw;
     }
@@ -153,6 +164,10 @@
 
     .carousel {
         display: none !important;
+    }
+
+    .topHeadlineText {
+        display: none;
     }
 
     .separator {

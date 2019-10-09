@@ -51,7 +51,7 @@ class EverythingTopicPage extends React.Component {
                                             <div className={styles.viewSourceButtonDiv}>
                                                 <Button className={styles.viewSourceButton}
                                                         onClick={() => window.open(article.url)}>
-                                                    View Source
+                                                    Read More
                                                 </Button>
                                             </div>
                                         </CardBody>
