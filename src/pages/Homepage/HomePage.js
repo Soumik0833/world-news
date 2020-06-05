@@ -109,7 +109,6 @@ class HomePage extends React.Component {
     constructor(props) {
         super(props);
         BackendHandler.fetch(BackendHandler.TOP_HEADLINES, "country=us");
-        BackendHandler.fetch(BackendHandler.SOURCES, "language=en");
     }
 
     render() {

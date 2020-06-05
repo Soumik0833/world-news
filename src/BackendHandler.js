@@ -9,20 +9,17 @@ require('dotenv').config();
 
 
 class BackendHandler {
-    static fetch(path, query, data = null, init = {}) {
+    static fetch(path, query, init = {}) {
         store.dispatch(backendRequestSent());
 
-        const path_with_locale = `${path}?${query}`;
         const api_key = process.env.REACT_APP_API_KEY;
+        const path_with_api_key = `${path}?${query}`;
 
-
-        fetch(path_with_locale, {
+        fetch(path_with_api_key, {
             ...init,
             method: "GET",
-            body: data,
-            credentials: 'omit',
             headers: {
-                Authorization: api_key,
+                authorization: api_key
             }
         }).then(BackendHandler._fetchHandler, BackendHandler._rejectHandler);
     }
