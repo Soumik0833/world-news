@@ -13,14 +13,11 @@ class BackendHandler {
         store.dispatch(backendRequestSent());
 
         const api_key = process.env.REACT_APP_API_KEY;
-        const path_with_api_key = `${path}?${query}`;
+        const path_with_api_key = query ? `${path}?${query}&token=${api_key}` : `${path}?token=${api_key}`;
 
         fetch(path_with_api_key, {
             ...init,
             method: "GET",
-            headers: {
-                authorization: api_key
-            }
         }).then(BackendHandler._fetchHandler, BackendHandler._rejectHandler);
     }
 
@@ -46,7 +43,6 @@ class BackendHandler {
 
 }
 
-BackendHandler.EVERYTHING = "https://newsapi.org/v2/everything";
-BackendHandler.TOP_HEADLINES = "https://newsapi.org/v2/top-headlines";
+BackendHandler.EVERYTHING = "https://gnews.io/api/v3/search";
 
 export default BackendHandler;

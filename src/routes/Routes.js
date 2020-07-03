@@ -21,7 +21,7 @@ const Routes = () => (
             />
 
             <Route
-                path="/topics/:id"
+                path="/:id"
                 exact
                 component={EverythingTopicPage}
             />

@@ -18,12 +18,8 @@ import {faGlobe} from "@fortawesome/free-solid-svg-icons";
 import {navbarToggled} from "../../redux/actions/navbarToggleActions";
 import {connect} from "react-redux";
 
-function redirectCountry (link) {
-    return window.location.assign("/top-headlines/country=" + link)
-}
-
-function redirectCategory (link) {
-    return window.location.assign("/top-headlines/country=us&category=" + link)
+function ridirect (link) {
+    return window.location.assign("q=" + link)
 }
 
 
@@ -37,31 +33,31 @@ class NavBar extends Component {
                         <Nav className="ml-auto" navbar>
 
                             <NavItem className={styles.navbarButtons}>
-                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("business")}>Business</NavLink>
+                                <NavLink className={styles.navbarText} onClick={() => ridirect("business")}>Business</NavLink>
                             </NavItem>
 
                             <NavItem className={styles.navbarButtons}>
-                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("entertainment")}>Entertainment</NavLink>
+                                <NavLink className={styles.navbarText} onClick={() => ridirect("entertainment")}>Entertainment</NavLink>
                             </NavItem>
 
                             <NavItem className={styles.navbarButtons}>
-                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("general")}>General</NavLink>
+                                <NavLink className={styles.navbarText} onClick={() => ridirect("general")}>General</NavLink>
                             </NavItem>
 
                             <NavItem className={styles.navbarButtons}>
-                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("health")}>Health</NavLink>
+                                <NavLink className={styles.navbarText} onClick={() => ridirect("health")}>Health</NavLink>
                             </NavItem>
 
                             <NavItem className={styles.navbarButtons}>
-                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("science")}>Science</NavLink>
+                                <NavLink className={styles.navbarText} onClick={() => ridirect("science")}>Science</NavLink>
                             </NavItem>
 
                             <NavItem className={styles.navbarButtons}>
-                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("sports")}>Sports</NavLink>
+                                <NavLink className={styles.navbarText} onClick={() => ridirect("sports")}>Sports</NavLink>
                             </NavItem>
 
                             <NavItem className={styles.navbarButtons}>
-                                <NavLink className={styles.navbarText} onClick={() => redirectCategory("technology")}>Technology</NavLink>
+                                <NavLink className={styles.navbarText} onClick={() => ridirect("technology")}>Technology</NavLink>
                             </NavItem>
 
 
@@ -71,219 +67,223 @@ class NavBar extends Component {
                                 </DropdownToggle>
                                 <DropdownMenu right className={styles.navbarDropdownMenu}>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ar")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Argentina")}>
                                         Argentina
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("au")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Australia")}>
                                         Australia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("at")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Austria")}>
                                         Austria
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("be")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Belgium")}>
                                         Belgium
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("br")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Brazil")}>
                                         Brazil
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("bg")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Bulgaria")}>
                                         Bulgaria
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ca")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Canada")}>
                                         Canada
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("cn")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("China")}>
                                         China
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("co")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Colombia")}>
                                         Colombia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("cu")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Cuba")}>
                                         Cuba
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("cz")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Czech Republic")}>
                                         Czech Republic
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("eg")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Denmark")}>
+                                        Denmark
+                                    </DropdownItem>
+
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Egypt")}>
                                         Egypt
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("fr")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("France")}>
                                         France
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("de")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Germany")}>
                                         Germany
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("gr")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Greece")}>
                                         Greece
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("hk")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Hong Kong")}>
                                         Hong Kong
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("hu")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Hungary")}>
                                         Hungary
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("in")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("India")}>
                                         India
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("id")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Indonesia")}>
                                         Indonesia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ie")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Ireland")}>
                                         Ireland
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("il")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Israel")}>
                                         Israel
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("it")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Italy")}>
                                         Italy
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("jp")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Japan")}>
                                         Japan
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("lv")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Latvia")}>
                                         Latvia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("lt")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Lithuania")}>
                                         Lithuania
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("my")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Malaysia")}>
                                         Malaysia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("mx")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Mexico")}>
                                         Mexico
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ma")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Morocco")}>
                                         Morocco
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("nl")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Netherlands")}>
                                         Netherlands
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("nz")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("New Zealand")}>
                                         New Zealand
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ng")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Nigeria")}>
                                         Nigeria
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("no")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Norway")}>
                                         Norway
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ph")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Philippines")}>
                                         Philippines
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("pl")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Poland")}>
                                         Poland
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("pt")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Portugal")}>
                                         Portugal
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ro")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Romania")}>
                                         Romania
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ru")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Russia")}>
                                         Russia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("sa")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Saudi Arabia")}>
                                         Saudi Arabia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("rs")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Serbia")}>
                                         Serbia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("sg")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Singapore")}>
                                         Singapore
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("sk")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Slovakia")}>
                                         Slovakia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("si")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Slovenia")}>
                                         Slovenia
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("za")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("South Africa")}>
                                         South Africa
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("kr")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("South Korea")}>
                                         South Korea
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("se")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Sweden")}>
                                         Sweden
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ch")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Switzerland")}>
                                         Switzerland
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("tw")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Taiwan")}>
                                         Taiwan
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("th")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Thailand")}>
                                         Thailand
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("tr")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Turkey")}>
                                         Turkey
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ae")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("UAE")}>
                                         UAE
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ua")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Ukraine")}>
                                         Ukraine
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("gb")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("United Kingdom")}>
                                         United Kingdom
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("us")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("USA")}>
                                         USA
                                     </DropdownItem>
 
-                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => redirectCountry("ve")}>
+                                    <DropdownItem className={styles.navbarDropdownText} onClick={() => ridirect("Venuzuela")}>
                                         Venuzuela
                                     </DropdownItem>
 

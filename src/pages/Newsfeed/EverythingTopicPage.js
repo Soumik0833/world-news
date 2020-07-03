@@ -14,7 +14,10 @@ class EverythingTopicPage extends React.Component {
     }
 
     setDate(date) {
-        let d = new Date(date);
+        let newDate = date.split(" ")[0]
+        let newTime = date.split(" ")[1]
+        let completeDate = newDate + " " + newTime
+        let d = new Date(completeDate);
         return d.toLocaleDateString(this.props.locale, {
             day: "numeric",
             year: "numeric",
@@ -40,7 +43,7 @@ class EverythingTopicPage extends React.Component {
                                                 className={styles.dateBadge}> {this.setDate(article.publishedAt)} </span>
                                             <span className={styles.titleBadge}> {article.title} </span>
                                             <CardImg className={styles.actualImage}
-                                                     src={article.urlToImage ? article.urlToImage : "https://picsum.photos/720/480"}/>
+                                                     src={article.image ? article.image : "https://source.unsplash.com/random/720x480"}/>
                                         </a>
                                     </Card>
 

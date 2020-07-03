@@ -32,75 +32,75 @@ const listOfTopics = {
     topics: [{
         "name": "Bitcoin",
         "logo": apple,
-        "url": "topics/q=apple"
+        "url": "q=apple"
     }, {
         "name": "Climate Change",
         "logo": ai,
-        "url": "topics/q=ai+machine+learning",
+        "url": "q=ai+machine+learning",
     }, {
         "name": "Climate Change",
         "logo": bitcoin,
-        "url": "topics/q=bitcoin",
+        "url": "q=bitcoin",
     }, {
         "name": "Climate Change",
         "logo": brexit,
-        "url": "topics/q=brexit",
+        "url": "q=brexit",
     }, {
         "name": "Climate Change",
         "logo": climateChange,
-        "url": "topics/q=climate+change",
+        "url": "q=climate+change",
     }, {
         "name": "Climate Change",
         "logo": facebook,
-        "url": "topics/q=facebook",
+        "url": "q=facebook",
     }, {
         "name": "Climate Change",
         "logo": google,
-        "url": "topics/q=google",
+        "url": "q=google",
     }, {
         "name": "Climate Change",
         "logo": hack,
-        "url": "topics/q=hack",
+        "url": "q=hack",
     }, {
         "name": "Climate Change",
         "logo": immigration,
-        "url": "topics/q=immigration",
+        "url": "q=immigration",
     }, {
         "name": "Climate Change",
         "logo": instagram,
-        "url": "topics/q=instagram",
+        "url": "q=instagram",
     }, {
         "name": "Climate Change",
         "logo": marvel,
-        "url": "topics/q=marvel",
+        "url": "q=marvel",
     }, {
         "name": "Climate Change",
         "logo": netflix,
-        "url": "topics/q=netflix",
+        "url": "q=netflix",
     }, {
         "name": "Climate Change",
         "logo": privacy,
-        "url": "topics/q=privacy",
+        "url": "q=privacy",
     }, {
         "name": "Climate Change",
         "logo": stocks,
-        "url": "topics/q=stocks",
+        "url": "q=stocks",
     }, {
         "name": "Climate Change",
         "logo": tesla,
-        "url": "topics/q=tesla",
+        "url": "q=tesla",
     }, {
         "name": "Climate Change",
         "logo": trump,
-        "url": "topics/q=trump",
+        "url": "q=trump",
     }, {
         "name": "Climate Change",
         "logo": water,
-        "url": "topics/q=water",
+        "url": "q=water",
     }, {
         "name": "Climate Change",
         "logo": weather,
-        "url": "topics/q=weather",
+        "url": "q=weather",
     }]
 };
 
@@ -108,7 +108,7 @@ class HomePage extends React.Component {
 
     constructor(props) {
         super(props);
-        BackendHandler.fetch(BackendHandler.TOP_HEADLINES, "country=us");
+        BackendHandler.fetch(BackendHandler.EVERYTHING, "q=Denmark|Norway|Sweden&in=title");
     }
 
     render() {
@@ -164,7 +164,7 @@ class HomePage extends React.Component {
                             <div>
                                 <img
                                     className={styles.topHeadlineImage}
-                                    src={article.urlToImage ? article.urlToImage : "https://picsum.photos/1080/720"}
+                                    src={article.image ? article.image : "https://source.unsplash.com/random/720x480"}
                                     alt=""
                                 />
                                 <BootstrapCarousel.Caption className={styles.carouselCaptionContainer}>
